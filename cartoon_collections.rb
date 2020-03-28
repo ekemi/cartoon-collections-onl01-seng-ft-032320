@@ -40,9 +40,9 @@ def find_the_cheese(array)# code an argument here
   array.any? do |value|
     if cheese_types.include?(value) == true
           return value
+    else
+      return nil
     end
    end
-  else
-      return nil
-  end
+
 end
